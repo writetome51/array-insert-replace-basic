@@ -1,4 +1,5 @@
-import { errorIfIndexNotValid } from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValid';
+import { errorIfIndexNotValid }
+	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValid';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 
 

@@ -6,22 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/writetome51/array-insert-replace-basic.git"
-  },
   "keywords": [
     "array",
     "manipulation"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/writetome51/array-insert-replace-basic/issues"
-  },
-  "homepage": "https://github.com/writetome51/array-insert-replace-basic#readme",
   "devDependencies": {},
   "dependencies": {
-    "@writetome51/array-get-and-removers-basic": "latest"
+    "basic-data-handling": "latest",
+    "@writetome51/array-get-and-removers-basic": "latest",
+    "@writetome51/array-removers-basic": "latest",
+    "@writetome51/array-and-index-validation": "latest"
   }
 }

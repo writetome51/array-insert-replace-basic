@@ -1,6 +1,6 @@
+import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 import { ifIndexValid_getActionResult }
 	from '@writetome51/array-and-index-validation/ifIndexValid_getActionResult';
-import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 import { errorIfValuesAreNotArrays }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfValuesAreNotArrays';
 

@@ -1,7 +1,7 @@
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 import { errorIfValuesAreNotArrays }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfValuesAreNotArrays';
-import { removeAdjacentAt } from './removeAdjacentAt';
+import { removeAdjacentAt } from '@writetome51/array-removers-basic/removeAdjacentAt';
 import { insertManyAt } from './insertOneAt_insertManyAt';
 
 

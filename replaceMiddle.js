@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var errorIfNotInteger_1 = require("basic-data-handling/errorIfNotInteger");
 var errorIfValuesAreNotArrays_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfValuesAreNotArrays");
-var removeAdjacentAt_1 = require("./removeAdjacentAt");
+var removeAdjacentAt_1 = require("@writetome51/array-removers-basic/removeAdjacentAt");
 var insertOneAt_insertManyAt_1 = require("./insertOneAt_insertManyAt");
 // Example: if array is [1,2,3,4,5,6,7] , and you call replaceMiddle([9,10], 2, array) ,
 // the result will be [1,2,9,10,6,7] .  It preserves the first 2 items and
