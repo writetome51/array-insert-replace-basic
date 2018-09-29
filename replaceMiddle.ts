@@ -1,16 +1,14 @@
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 import { errorIfValuesAreNotArrays }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfValuesAreNotArrays';
-import { removeAdjacentAt } from '@writetome51/array-removers-basic/removeAdjacentAt';
-import { insertManyAt } from './insertOneAt_insertManyAt';
 
 
-// Example: if array is [1,2,3,4,5,6,7] , and you call replaceMiddle([9,10], 2, array) ,
+// Example: if array is [1,2,3,4,5,6,7] , and you call replaceMiddle(2, [9,10], array) ,
 // the result will be [1,2,9,10,6,7] .  It preserves the first 2 items and
-// the last 2.  values doesn't have to be same length as number of items
+// the last 2.  newValues doesn't have to be same length as number of items
 // it's replacing.
 
-export function replaceMiddle(newValues, numItemsToPreserveAtEachEnd, array): void {
+export function replaceMiddle(numItemsToPreserveAtEachEnd, newValues: any[], array): void {
 	errorIfValuesAreNotArrays([newValues, array]);
 	errorIfNotInteger(numItemsToPreserveAtEachEnd);
 	if (numItemsToPreserveAtEachEnd < 1) throw new Error('The number of bookend items to' +
@@ -20,6 +18,6 @@ export function replaceMiddle(newValues, numItemsToPreserveAtEachEnd, array): vo
 			' exceeds the length of the array. This is now allowed.');
 	}
 	let numToRemove = array.length - (numItemsToPreserveAtEachEnd * 2);
-	removeAdjacentAt(numItemsToPreserveAtEachEnd, numToRemove, array);
-	insertManyAt(numItemsToPreserveAtEachEnd, newValues, array);
+
+	array.splice(numItemsToPreserveAtEachEnd, numToRemove, ...newValues);
 }

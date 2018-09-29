@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-insert-replace-basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "array-handling functions that remove items from the array",
   "main": "",
   "scripts": {
@@ -15,7 +15,6 @@
   "devDependencies": {},
   "dependencies": {
     "basic-data-handling": "latest",
-    "@writetome51/array-get-and-removers-basic": "latest",
     "@writetome51/array-removers-basic": "latest",
     "@writetome51/array-and-index-validation": "latest"
   }
